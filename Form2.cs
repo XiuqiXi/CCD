@@ -66,5 +66,17 @@ namespace CCD上位机
         {
             System.Diagnostics.Process.Start("explorer.exe", "https://xiuqixi.github.io/");
         }
+
+        
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            toolTip1.IsBalloon = true;
+            toolTip1.SetToolTip(this.pictureBox1, "This section is for obtaining raw data from CCD");
+        }
     }
 }
