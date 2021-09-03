@@ -35,7 +35,7 @@ namespace CCD上位机
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 532);
             this.Name = "NoiseReduction";
             this.Text = "NoiseReduction";
             this.ResumeLayout(false);
