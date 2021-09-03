@@ -56,5 +56,15 @@ namespace CCD上位机
             Form5 form5 = new Form5();
             form5.ShowDialog();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://xiuqixi.github.io/");
+        }
     }
 }

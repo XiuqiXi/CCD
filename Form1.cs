@@ -459,18 +459,7 @@ namespace CCD上位机
         private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             //当组合框中选择的值发生变化时弹出消息框显示当前组合框中选择的值
-            //MessageBox.Show("您选择的专业是：" + comboBox2.Text, "提示");
-            //if (Res == 0xB1) SH_period = 20;///积分时间 t_int = SH_period / 2 MHz = 10 μs */
-            //else if (Res == 0xB2) SH_period = 40;///积分时间 t_int = SH_period / 2 MHz = 20 μs */
-            //else if (Res == 0xB3) SH_period = 100;///积分时间 t_int = SH_period / 2 MHz = 50 μs */
-            //else if (Res == 0xB4) SH_period = 120;///积分时间 t_int = SH_period / 2 MHz = 60 μs */
-            //else if (Res == 0xB5) SH_period = 150;///积分时间 t_int = SH_period / 2 MHz = 75 μs */
-            //else if (Res == 0xB6) SH_period = 200;///积分时间 t_int = SH_period / 2 MHz = 100 μs */
-            //else if (Res == 0xB7) SH_period = 1000;///积分时间 t_int = SH_period / 2 MHz = 500 μs */
-            //else if (Res == 0xB8) SH_period = 2500;///积分时间 t_int = SH_period / 2 MHz = 1.25 ms */
-            //else if (Res == 0xB9) SH_period = 5000;///积分时间 t_int = SH_period / 2 MHz = 2.5 ms */	
-            //else if (Res == 0xBA) SH_period = 15000;///积分时间 t_int = SH_period / 2 MHz = 7.5 ms */
-
+            
             char[] data;
             string str = "@c0080#@";
             data = str.ToCharArray();
@@ -491,7 +480,7 @@ namespace CCD上位机
             string str_13 = "@c00013#@";
             string str_14 = "@c00014#@";
             string str_15 = "@c00015#@";
-
+            string str_16 = "@c00016#@";
 
             if (comboBox2.SelectedIndex == 0) data = str_0.ToCharArray();
             else if (comboBox2.SelectedIndex == 1) data = str_1.ToCharArray();
@@ -499,17 +488,17 @@ namespace CCD上位机
             else if (comboBox2.SelectedIndex == 3) data = str_3.ToCharArray();
             else if (comboBox2.SelectedIndex == 4) data = str_4.ToCharArray();
             else if (comboBox2.SelectedIndex == 5) data = str_5.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_6.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_7.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_8.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_9.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_10.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_11.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_12.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_13.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_14.ToCharArray();
-            else if (comboBox2.SelectedIndex == 5) data = str_15.ToCharArray();
-
+            else if (comboBox2.SelectedIndex == 6) data = str_6.ToCharArray();
+            else if (comboBox2.SelectedIndex == 7) data = str_7.ToCharArray();
+            else if (comboBox2.SelectedIndex == 8) data = str_8.ToCharArray();
+            else if (comboBox2.SelectedIndex == 9) data = str_9.ToCharArray();
+            else if (comboBox2.SelectedIndex == 10) data = str_10.ToCharArray();
+            else if (comboBox2.SelectedIndex == 11) data = str_11.ToCharArray();
+            else if (comboBox2.SelectedIndex == 12) data = str_12.ToCharArray();
+            else if (comboBox2.SelectedIndex == 13) data = str_13.ToCharArray();
+            else if (comboBox2.SelectedIndex == 14) data = str_14.ToCharArray();
+            else if (comboBox2.SelectedIndex == 15) data = str_15.ToCharArray();
+            else if (comboBox2.SelectedIndex == 16) data = str_16.ToCharArray();
 
             if (serialPort1.IsOpen == true)
             {

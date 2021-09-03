@@ -30,5 +30,11 @@ namespace CCD上位机
         {
             webBrowser1.Url = new System.Uri("https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi", System.UriKind.Absolute);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            calibration calibration = new calibration();
+            calibration.ShowDialog();
+        }
     }
 }
